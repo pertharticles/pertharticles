@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Danao Group — Private concierge, chauffeur, security, and elite lifestyle services across Australia." />
+  <title>Danao Group — Luxury Without Limits</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ======== NAVIGATION ======== -->
+  <nav class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="#hero" class="nav__logo-link">
+        <img src="logo.png" alt="Danao Group" class="nav__logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='block'" />
+        <span class="nav__logo-text" style="display:none">DANAO GROUP</span>
+      </a>
+      <ul class="nav__links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#access">Private Access</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="nav__cta" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Request Access</button>
+      <button class="nav__burger" id="burger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <!-- Mobile menu -->
+    <div class="nav__mobile" id="mobileMenu">
+      <ul>
+        <li><a href="#about" class="mobile-link">About</a></li>
+        <li><a href="#services" class="mobile-link">Services</a></li>
+        <li><a href="#access" class="mobile-link">Private Access</a></li>
+        <li><a href="#contact" class="mobile-link">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ======== HERO ======== -->
+  <section class="hero" id="hero">
+    <div class="hero__bg"></div>
+    <div class="hero__content reveal">
+      <p class="hero__eyebrow">Established in Australia</p>
+      <h1 class="hero__headline">Luxury Without&nbsp;Limits</h1>
+      <p class="hero__sub">Private concierge, chauffeur, security, and elite lifestyle services across Australia</p>
+      <a href="#contact" class="btn btn--gold hero__cta">Request Private Access</a>
+    </div>
+    <div class="hero__scroll-hint">
+      <span>Scroll</span>
+      <div class="hero__scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ======== ABOUT ======== -->
+  <section class="about section" id="about">
+    <div class="container about__grid">
+      <div class="about__text reveal">
+        <p class="label">Who We Are</p>
+        <h2 class="heading-2">Discretion.<br>Excellence.<br>Absolute Precision.</h2>
+        <p class="body-copy">Danao Group operates at the intersection of privacy and privilege. We serve those who expect nothing less than perfection — entrepreneurs, executives, public figures, and families who demand seamless, world-class service at every turn.</p>
+        <p class="body-copy">Our network spans the full breadth of Australia, with select international reach. Every engagement is handled personally, confidentially, and with the highest level of care.</p>
+        <a href="#access" class="btn btn--outline">Discover Our Standards</a>
+      </div>
+      <div class="about__image reveal reveal--right">
+        <div class="about__image-frame">
+          <div class="about__image-placeholder">
+            <div class="about__image-inner">
+              <div class="about__ornament"></div>
+            </div>
+          </div>
+          <div class="about__image-border"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== SERVICES ======== -->
+  <section class="services section" id="services">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="label">What We Offer</p>
+        <h2 class="heading-2">Elite Services,<br>Tailored to You</h2>
+        <p class="section-intro">Every service is curated, bespoke, and delivered with white-glove precision.</p>
+      </div>
+      <div class="services__grid">
+
+        <div class="service-card reveal">
+          <div class="service-card__icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M4 32h40M8 32V20l6-8h20l6 8v12M16 40a4 4 0 1 1 0-8 4 4 0 0 1 0 8zM32 40a4 4 0 1 1 0-8 4 4 0 0 1 0 8z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M4 24h8M36 24h8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3 class="service-card__title">Chauffeur Services</h3>
+          <p class="service-card__desc">Professional, discreet drivers in premium vehicles. Available around the clock for transfers, events, and ongoing engagements throughout Australia.</p>
+          <span class="service-card__link">Learn More <span class="arrow">→</span></span>
+        </div>
+
+        <div class="service-card reveal">
+          <div class="service-card__icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M24 4L8 12v14c0 8.837 6.862 17.12 16 19 9.138-1.88 16-10.163 16-19V12L24 4z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M17 24l5 5 9-9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3 class="service-card__title">Private Security</h3>
+          <p class="service-card__desc">Close protection, residential security, and risk management from a team with military and law enforcement backgrounds. Your safety, completely silent.</p>
+          <span class="service-card__link">Learn More <span class="arrow">→</span></span>
+        </div>
+
+        <div class="service-card reveal">
+          <div class="service-card__icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M24 4c-5.523 0-10 4.477-10 10s4.477 10 10 10 10-4.477 10-10S29.523 4 24 4z" stroke="currentColor" stroke-width="1.5"/>
+              <path d="M8 44c0-8.837 7.163-16 16-16s16 7.163 16 16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              <path d="M36 20l6 4-6 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3 class="service-card__title">Concierge &amp; Lifestyle</h3>
+          <p class="service-card__desc">From fine dining reservations to sourcing rare items and managing complex itineraries — your personal concierge handles every detail seamlessly.</p>
+          <span class="service-card__link">Learn More <span class="arrow">→</span></span>
+        </div>
+
+        <div class="service-card reveal">
+          <div class="service-card__icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M6 30l8-14h20l8 14H6z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+              <path d="M14 30v4M34 30v4M6 30l4 4h28l4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              <circle cx="24" cy="22" r="3" stroke="currentColor" stroke-width="1.5"/>
+            </svg>
+          </div>
+          <h3 class="service-card__title">Private Jets</h3>
+          <p class="service-card__desc">Access to a curated fleet of private aircraft. Domestic and international charters arranged with absolute discretion, flexibility, and first-class comfort.</p>
+          <span class="service-card__link">Learn More <span class="arrow">→</span></span>
+        </div>
+
+        <div class="service-card reveal">
+          <div class="service-card__icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M4 36h40M8 36V24l8-10h16l8 10v12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M16 36v-8h16v8M24 14v10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              <path d="M4 40h40" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3 class="service-card__title">Luxury Yachts</h3>
+          <p class="service-card__desc">Charter the finest vessels along Australia's coastline. Whether an intimate escape or a grand occasion, we source and crew exceptional yachts for every voyage.</p>
+          <span class="service-card__link">Learn More <span class="arrow">→</span></span>
+        </div>
+
+        <div class="service-card reveal">
+          <div class="service-card__icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M24 6l4.5 9.1L39 16.6l-7.5 7.3 1.8 10.3L24 29.1l-9.3 4.9 1.8-10.3L9 16.6l10.5-1.5L24 6z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+              <path d="M16 38v4M32 38v4M20 42h8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3 class="service-card__title">Events &amp; Experiences</h3>
+          <p class="service-card__desc">Bespoke events crafted for those who demand the extraordinary. Private celebrations, corporate affairs, and curated experiences that leave lasting impressions.</p>
+          <span class="service-card__link">Learn More <span class="arrow">→</span></span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== PRIVATE ACCESS ======== -->
+  <section class="access section" id="access">
+    <div class="access__bg"></div>
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="label label--light">Exclusive Membership</p>
+        <h2 class="heading-2 heading-2--light">Private Access,<br>Three Tiers</h2>
+        <p class="section-intro section-intro--light">Membership with Danao Group is by application only. Each tier grants access to a world most never experience.</p>
+      </div>
+      <div class="tiers reveal">
+
+        <div class="tier tier--gold">
+          <div class="tier__header">
+            <div class="tier__ornament"></div>
+            <p class="tier__label">Gold</p>
+          </div>
+          <ul class="tier__perks">
+            <li>24/7 Concierge Access</li>
+            <li>Priority Chauffeur Booking</li>
+            <li>Event Invitations</li>
+            <li>Dedicated Account Manager</li>
+            <li>Member Privileges Network</li>
+          </ul>
+          <p class="tier__note">Invite or Application Required</p>
+        </div>
+
+        <div class="tier tier--platinum">
+          <div class="tier__header">
+            <div class="tier__ornament"></div>
+            <p class="tier__label">Platinum</p>
+          </div>
+          <ul class="tier__perks">
+            <li>Everything in Gold</li>
+            <li>Private Security Detail</li>
+            <li>Yacht &amp; Jet Access</li>
+            <li>Bespoke Event Curation</li>
+            <li>International Reach</li>
+            <li>Emergency Response Protocol</li>
+          </ul>
+          <p class="tier__note">Referral Required</p>
+        </div>
+
+        <div class="tier tier--black">
+          <div class="tier__header">
+            <div class="tier__ornament"></div>
+            <p class="tier__label">Black</p>
+          </div>
+          <ul class="tier__perks">
+            <li>Everything in Platinum</li>
+            <li>Fully Bespoke Service</li>
+            <li>No Limits. No Boundaries.</li>
+            <li>Personal Director Assigned</li>
+            <li>Absolute Discretion Guaranteed</li>
+            <li>Priority Over All Members</li>
+          </ul>
+          <p class="tier__note">By Private Invitation Only</p>
+        </div>
+
+      </div>
+      <div class="access__cta reveal">
+        <a href="#contact" class="btn btn--gold">Apply for Access</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== TESTIMONIAL ======== -->
+  <section class="testimonial section">
+    <div class="container">
+      <div class="testimonial__inner reveal">
+        <div class="testimonial__quote-mark">"</div>
+        <blockquote class="testimonial__text">
+          There are services, and then there is Danao Group. The level of attention, discretion, and seamless execution is unlike anything I have encountered. They simply don't fail.
+        </blockquote>
+        <p class="testimonial__attr">— Private Client, Sydney</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== CONTACT ======== -->
+  <section class="contact section" id="contact">
+    <div class="container contact__grid">
+      <div class="contact__info reveal">
+        <p class="label">Get in Touch</p>
+        <h2 class="heading-2">Begin Your<br>Experience</h2>
+        <p class="body-copy">All enquiries are handled with complete confidentiality. Our team will respond within 24 hours.</p>
+        <div class="contact__detail">
+          <span class="contact__detail-label">Email</span>
+          <a href="mailto:info@danaogroup.com.au" class="contact__detail-value">info@danaogroup.com.au</a>
+        </div>
+        <div class="contact__detail">
+          <span class="contact__detail-label">Location</span>
+          <span class="contact__detail-value">Australia — Nationwide</span>
+        </div>
+      </div>
+      <div class="contact__form-wrap reveal reveal--right">
+        <form class="contact-form" id="contactForm" novalidate>
+          <div class="form-group">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="your@email.com" required />
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone (Optional)</label>
+            <input type="tel" id="phone" name="phone" placeholder="+61 000 000 000" />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="How can we assist you?" required></textarea>
+          </div>
+          <button type="submit" class="btn btn--gold btn--full">Send Enquiry</button>
+          <p class="form-note">All communications are strictly confidential.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== FOOTER ======== -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__logo">
+        <img src="logo.png" alt="Danao Group" class="footer__logo-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='block'" />
+        <span class="footer__logo-text" style="display:none">DANAO GROUP</span>
+      </div>
+      <nav class="footer__nav">
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#access">Private Access</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="footer__social">
+        <a href="#" class="footer__social-link" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="2" y="2" width="20" height="20" rx="5" stroke="currentColor" stroke-width="1.5"/>
+            <circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.5"/>
+            <circle cx="17.5" cy="6.5" r="1" fill="currentColor"/>
+          </svg>
+        </a>
+        <a href="#" class="footer__social-link" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" stroke="currentColor" stroke-width="1.5"/>
+            <rect x="2" y="9" width="4" height="12" stroke="currentColor" stroke-width="1.5"/>
+            <circle cx="4" cy="4" r="2" stroke="currentColor" stroke-width="1.5"/>
+          </svg>
+        </a>
+        <a href="#" class="footer__social-link" aria-label="Facebook">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+          </svg>
+        </a>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; <span id="year"></span> Danao Group. All rights reserved.</p>
+        <p class="footer__tagline">Luxury Without Limits</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
