@@ -807,6 +807,76 @@ button { cursor: pointer; border: none; background: none; font: inherit; }
 }
 
 /* ============================================================
+   FAQ
+   ============================================================ */
+.faq {
+  background: var(--black-2);
+}
+
+.faq__list {
+  max-width: 780px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.faq__item {
+  border-bottom: 1px solid var(--border-soft);
+}
+
+.faq__item:first-child {
+  border-top: 1px solid var(--border-soft);
+}
+
+.faq__question {
+  font-family: var(--font-sans);
+  font-size: 0.88rem;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--white-soft);
+  padding: 1.5rem 2rem 1.5rem 0;
+  cursor: pointer;
+  list-style: none;
+  position: relative;
+  transition: color 0.25s var(--ease-luxury);
+  line-height: 1.5;
+}
+
+.faq__question::-webkit-details-marker { display: none; }
+
+.faq__question::after {
+  content: '+';
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.2rem;
+  color: var(--gold);
+  transition: transform 0.3s var(--ease-luxury);
+}
+
+.faq__item[open] .faq__question::after {
+  transform: translateY(-50%) rotate(45deg);
+}
+
+.faq__question:hover {
+  color: var(--gold);
+}
+
+.faq__answer {
+  padding: 0 0 1.5rem;
+}
+
+.faq__answer p {
+  font-size: 0.9rem;
+  line-height: 1.8;
+  color: var(--white-mid);
+  font-weight: 300;
+}
+
+/* ============================================================
    CONTACT
    ============================================================ */
 .contact {
